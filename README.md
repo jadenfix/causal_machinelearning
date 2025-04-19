@@ -30,7 +30,7 @@ Penalized regression techniques for high-dimensional settings and bias-variance 
 Optimizing hyperparameters and avoiding overfitting with k-fold cross-validation.  
 
 ### 6. **Supervised Learning & Classification**  
-Decision trees, random forests, neural networks, and SVMs for predictive tasks (time-permitting).  
+Decision trees, random forests, neural networks, and SVMs for predictive tasks.  
 
 ### 7. **Double Lasso**  
 Addressing regularization-induced bias in causal effect estimation.  
