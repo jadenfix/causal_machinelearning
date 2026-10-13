@@ -58,3 +58,9 @@ The Mincer-model simulation runs offline. Its generated observations are synthet
 The reported coefficients describe only the seeded synthetic sample. They are workflow evidence, not empirical causal-effect, policy, accuracy, or performance claims.
 
 Runnable notebooks: `Homework_2_Simulation_Code.ipynb`.
+
+## Demo
+
+[![Verified synthetic simulation workflow](docs/demo/causal-machinelearning-demo.gif)](docs/demo/causal-machinelearning-demo.mp4)
+
+This 18-second demo is generated from the actual bounded workflow at the source commit recorded in [`capture.json`](docs/demo/capture.json). It shows the verified execution lane, ten captured OLS fits, the notebook's emitted selection figure, and the receipt checks. The inputs are seeded synthetic coursework data—not observational evidence or a population causal-effect estimate.

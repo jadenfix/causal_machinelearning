@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "recorded_source": "661f1022ed196cff8cb1d247352064d97163a810",
+  "source_blobs": {
+    "Homework_2_Simulation_Code.ipynb": "55223e1ef606f2b2be2d90cb1b3ac2c16613434f",
+    "requirements.txt": "324c5a7e49a9a5d89e5cc6b4cd6e82f035ebffdb",
+    "run_research.py": "05fd3d47257e14c8e0af8e98fc4f2254bf18b493",
+    "scripts/generate_demo.py": "ac73ad09b3cd3b2fc09ba8ee0c5dd5bee5456f88",
+    "scripts/verify_demo.py": "d7c00d98e2a741b5f3c3e1ad4a0d940d9a36d9bd",
+    "tests/test_research.py": "04df8b7e6a0cc561b39f50b549e09105c8c5768d"
+  },
+  "command": "python scripts/generate_demo.py --source 661f1022ed196cff8cb1d247352064d97163a810",
+  "workflow": {
+    "notebook": "Homework_2_Simulation_Code.ipynb",
+    "sample_mode": "RESEARCH_N=10000 bounded synthetic smoke run",
+    "receipt_checks": {
+      "all_reported_values_finite": true,
+      "step_8_matches_step_6": true,
+      "fit_observations_match_data": true,
+      "expected_fit_count": 10
+    },
+    "sample_sizes": {
+      "mincer": 10000,
+      "dice_collider": 100,
+      "dice_selection_full": 200,
+      "dice_selection_selected": 122
+    }
+  },
+  "media": {
+    "width": 960,
+    "height": 540,
+    "fps": 8,
+    "frames": 144,
+    "scope": "Offline seeded synthetic coursework only; no population causal-effect, policy, accuracy, or performance claim.",
+    "artifacts": {
+      "causal-machinelearning-demo.gif": {
+        "sha256": "091c733f1d392a1c35bb98b1d156d0c530b141a1dcbfcb14520b4ffe64420059",
+        "bytes": 175715
+      },
+      "causal-machinelearning-demo.mp4": {
+        "sha256": "9ff15a4627d2c9030b733badc3430458e987f779c0967e838d3c70a81774c950",
+        "bytes": 143679
+      },
+      "causal-machinelearning-poster.png": {
+        "sha256": "ff8beabda5dcb7f65e416d78732efdbf5629f8270c7c93d49401819989effe58",
+        "bytes": 30453
+      }
+    }
+  }
+}
