@@ -43,3 +43,16 @@ Forest-based methods for estimating heterogeneous treatment effects.
 
 ### 10. **Synthetic Control & Synthetic Differences-in-Differences**  
 Counterfactual estimation for policy evaluation using weighted control groups.  
+
+## Reproduce the checked research workflow
+
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+python run_research.py 'Homework_2_Simulation_Code.ipynb'
+```
+
+The Mincer-model simulation runs offline. Its generated observations are synthetic by design; they are not the unavailable observational `hw1_small.csv` study. The default uses the original 1,000,000 observations; set `RESEARCH_N=10000` for a bounded smoke run, which is not reproduction of full-scale estimates. Figures and a cell execution manifest are written to `research-output/`. The runner executes the original code cells, stops on errors, seeds NumPy to 42, and uses a headless plotting backend.
+
+Runnable notebooks: `Homework_2_Simulation_Code.ipynb`.
