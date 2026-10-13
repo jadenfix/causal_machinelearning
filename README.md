@@ -53,6 +53,8 @@ pip install -r requirements.txt
 python run_research.py 'Homework_2_Simulation_Code.ipynb'
 ```
 
-The Mincer-model simulation runs offline. Its generated observations are synthetic by design; they are not the unavailable observational `hw1_small.csv` study. The default uses the original 1,000,000 observations; set `RESEARCH_N=10000` for a bounded smoke run, which is not reproduction of full-scale estimates. Figures and a cell execution manifest are written to `research-output/`. The runner executes the original code cells, stops on errors, seeds NumPy to 42, and uses a headless plotting backend.
+The Mincer-model simulation runs offline. Its generated observations are synthetic by design; they are not the unavailable observational `hw1_small.csv` study. The default uses the original 1,000,000 observations; set `RESEARCH_N=10000` for a bounded smoke run, which is not reproduction of full-scale estimates. Figures and a machine-readable `execution.json` receipt are written to `research-output/`. The receipt records every OLS fit, finite-value and row-count checks, output hashes, and the exact local source identity. The runner executes the original code cells, stops on errors, seeds NumPy to 42, and uses a headless plotting backend.
+
+The reported coefficients describe only the seeded synthetic sample. They are workflow evidence, not empirical causal-effect, policy, accuracy, or performance claims.
 
 Runnable notebooks: `Homework_2_Simulation_Code.ipynb`.
